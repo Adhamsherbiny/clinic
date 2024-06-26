@@ -1,0 +1,69 @@
+.nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--light-color);
+    user-select: none;
+    z-index: 10000;
+}
+
+.nav .nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 12px;
+}
+
+.nav .nav-menu .btn-menu{
+    display: block;
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: var(--transtion-time);
+    cursor: pointer;
+    position: relative;
+}
+.nav .nav-menu .btn-menu:hover{
+    background-color: var(--main-color);
+}
+
+.nav .nav-menu li .nav-taps{
+    display: block;
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: var(--transtion-time);
+}
+
+.nav .nav-menu li .nav-taps:hover{
+    background-color: var(--main-color);
+}
+
+.nav .nav-menu .toggle-menu{
+    cursor: pointer;
+    position: absolute;
+    width: 180px;
+    left: -90px;
+    top: 45px;
+    border-radius: var(--border-r);
+    list-style: none;
+    background-color: var(--footer-color);
+    display: none;
+}
+
+.nav .nav-menu .toggle-menu .toggle-taps{
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--light-color);
+    text-decoration: none;
+    width: 100%;
+    transition: var(--transtion-time);
+}
+
+.nav .nav-menu .toggle-menu .toggle-taps:hover{
+    background-color: var(--main-color);
+}
